@@ -3,6 +3,7 @@ import { useState } from 'react'
 
 
 function App() {
+  const [answer, setAnswer] = useState(null)
   const [count, setCount] = useState(0)
 
   function getData(){
