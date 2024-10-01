@@ -18,6 +18,15 @@ function App() {
           <button onClick={getData}>Press for a random card</button>
           <p>Cards requested: {requestCount}</p>
         </div>
+        {answer ? (
+        <div>
+          <h2>{answer.name}</h2>
+          <p>{answer.type_line}</p>
+          <img src={answer.image_uris.normal} alt={answer.name} />
+        </div>
+      ) : (
+        <p>No card requested</p>
+      )}
     </div>
   )
 }
